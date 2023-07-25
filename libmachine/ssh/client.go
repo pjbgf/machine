@@ -11,7 +11,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/docker/docker/pkg/term"
+	"github.com/moby/term"
 	"github.com/rancher/machine/libmachine/log"
 	"github.com/rancher/machine/libmachine/mcnutils"
 	"github.com/rancher/machine/libmachine/util"

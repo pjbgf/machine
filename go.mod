@@ -3,7 +3,7 @@ module github.com/rancher/machine
 go 1.19
 
 replace (
-	github.com/docker/docker => github.com/moby/moby v1.4.2-0.20170731201646-1009e6a40b29
+	github.com/docker/docker => github.com/moby/moby v1.13.1
 	github.com/urfave/cli => github.com/urfave/cli v1.11.1-0.20151120215642-0302d3914d2a // newer versions of this will break the rpc binding code
 )
 
@@ -16,10 +16,10 @@ require (
 	github.com/aws/aws-sdk-go v1.34.0
 	github.com/bugsnag/bugsnag-go v2.1.2+incompatible
 	github.com/digitalocean/godo v0.0.0-20170317202744-d59ed2fe842b
-	github.com/docker/docker v0.7.3-0.20190327010347-be7ac8be2ae0
 	github.com/exoscale/egoscale v0.12.3
 	github.com/gophercloud/gophercloud v0.7.0
 	github.com/gophercloud/utils v0.0.0-20191129022341-463e26ffa30d
+	github.com/moby/term v0.5.0
 	github.com/rackspace/gophercloud v0.0.0-20150408191457-ce0f487f6747
 	github.com/rancher/wrangler v1.1.0
 	github.com/samalba/dockerclient v0.0.0-20151231000007-f661dd4754aa
@@ -28,20 +28,20 @@ require (
 	github.com/urfave/cli v1.20.0
 	github.com/vmware/govcloudair v0.0.2
 	github.com/vmware/govmomi v0.30.4
-	golang.org/x/crypto v0.0.0-20220411220226-7b82a4e95df4
-	golang.org/x/net v0.7.0
-	golang.org/x/oauth2 v0.0.0-20211104180415-d3ed0bb246c8
-	golang.org/x/sys v0.5.0
+	golang.org/x/crypto v0.11.0
+	golang.org/x/net v0.12.0
+	golang.org/x/oauth2 v0.10.0
+	golang.org/x/sys v0.10.0
 	google.golang.org/api v0.57.0
 	gopkg.in/yaml.v2 v2.4.0
-	k8s.io/api v0.25.4
-	k8s.io/apimachinery v0.25.4
-	k8s.io/client-go v0.25.4
+	k8s.io/api v0.25.12
+	k8s.io/apimachinery v0.25.12
+	k8s.io/client-go v0.25.12
 )
 
 require (
 	cloud.google.com/go v0.97.0 // indirect
-	github.com/Azure/go-ansiterm v0.0.0-20170929234023-d6e3b3328b78 // indirect
+	github.com/Azure/go-ansiterm v0.0.0-20210617225240-d185dfc1b5a1 // indirect
 	github.com/Azure/go-autorest v14.2.0+incompatible // indirect
 	github.com/Azure/go-autorest/autorest/azure/cli v0.3.1 // indirect
 	github.com/Azure/go-autorest/autorest/date v0.3.0 // indirect
@@ -56,6 +56,7 @@ require (
 	github.com/cenkalti/backoff v0.0.0-20141124221459-9831e1e25c87 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/dimchansky/utfbom v1.1.0 // indirect
+	github.com/docker/docker v0.0.0-00010101000000-000000000000 // indirect
 	github.com/docker/go-units v0.4.0 // indirect
 	github.com/emicklei/go-restful/v3 v3.8.0 // indirect
 	github.com/evanphx/json-patch v4.12.0+incompatible // indirect
@@ -67,9 +68,9 @@ require (
 	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/golang-jwt/jwt/v4 v4.2.0 // indirect
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect
-	github.com/golang/protobuf v1.5.2 // indirect
+	github.com/golang/protobuf v1.5.3 // indirect
 	github.com/google/gnostic v0.5.7-v3refs // indirect
-	github.com/google/go-cmp v0.5.8 // indirect
+	github.com/google/go-cmp v0.5.9 // indirect
 	github.com/google/go-querystring v0.0.0-20140804062624-30f7a39f4a21 // indirect
 	github.com/google/gofuzz v1.2.0 // indirect
 	github.com/googleapis/gax-go/v2 v2.1.0 // indirect
@@ -95,13 +96,13 @@ require (
 	github.com/tent/http-link-go v0.0.0-20130702225549-ac974c61c2f9 // indirect
 	go.opencensus.io v0.23.0 // indirect
 	golang.org/x/sync v0.0.0-20220722155255-886fb9371eb4 // indirect
-	golang.org/x/term v0.5.0 // indirect
-	golang.org/x/text v0.7.0 // indirect
+	golang.org/x/term v0.10.0 // indirect
+	golang.org/x/text v0.11.0 // indirect
 	golang.org/x/time v0.0.0-20220210224613-90d013bbcef8 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
 	google.golang.org/genproto v0.0.0-20210924002016-3dee208752a0 // indirect
 	google.golang.org/grpc v1.40.0 // indirect
-	google.golang.org/protobuf v1.28.0 // indirect
+	google.golang.org/protobuf v1.31.0 // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 	k8s.io/klog/v2 v2.70.1 // indirect
